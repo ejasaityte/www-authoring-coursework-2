@@ -1,1 +1,23 @@
-
+.tip-1{
+  background-color: #81cea2;
+  margin-top: 20px;
+  padding: 10px;
+  color: #646f58;
+  border-radius: 50px;
+  line-height: 75px;
+  text-align: center;
+  font-size: 20px;
+}
+.tip-2{
+  background-color: #646f58;
+  margin-top: 20px;
+  padding: 10px;
+  color: #81cea2;
+  border-radius: 50px;
+  line-height: 75px;
+  text-align: center;
+  font-size: 20px;
+}
+.container {
+    max-width: 95%;
+}
