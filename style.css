@@ -4,9 +4,9 @@
   padding: 10px;
   color: #646f58;
   border-radius: 50px;
-  line-height: 75px;
+  line-height: 50px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 .tip-2{
   background-color: #646f58;
@@ -14,10 +14,19 @@
   padding: 10px;
   color: #81cea2;
   border-radius: 50px;
-  line-height: 75px;
+  line-height: 50px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 .container {
-    max-width: 95%;
+    max-width: 90%;
+    margin-top: 15px;
+}
+.FAQItem{
+  margin-top:10px;
+  margin-bottom:10px;
+  border-style: solid;
+  border-radius: 30px;
+  padding:10px;
+  border-color:#00b8e6;
 }
