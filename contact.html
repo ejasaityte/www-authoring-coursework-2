@@ -3,8 +3,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>The Little Green Larder</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+      <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -37,6 +41,72 @@
     </ul>
   </div>
 </nav>
+<body>
+  <div id='map'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoibm9ibGVzc2UyMjI1IiwiYSI6ImNrM2x6ZjI5ZTBodjczY3Q1Y2UxcnRodzUifQ.5hVXWTidGWpfwrRtlKx-BA';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v10',
+      center: [-2.992334, 56.455923],
+      zoom: 16
+    });
+    map.on('load', function() {
+      map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+          "type": "geojson",
+          "data": {
+            "type": "FeatureCollection",
+            "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-2.992334, 56.455923]
+              },
+              "properties": {
+                "title": "The Little Green Larder",
+                "icon": "triangle",
+                "description": "The Little Green Larder offers a plastic free shopping experience, with zero waste alternatives to inspire us to create a greener future."
+              }
+            }]
+          }
+        },
+        "layout": {
+          "icon-image": "{icon}-15",
+          "text-field": "{title}",
+          "text-font": ["Roboto Regular"],
+          "text-offset": [0.6, 0.1],
+          "text-anchor": "left",
+        }
+      });
+      map.on('click', 'points', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(description)
+.addTo(map);
+});
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'points', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'points', function () {
+map.getCanvas().style.cursor = '';
+});
+    });
+    map.addControl(new mapboxgl.NavigationControl());
+  </script>
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
