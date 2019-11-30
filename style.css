@@ -30,3 +30,8 @@
   padding:10px;
   border-color:#00b8e6;
 }
+#map{
+  height: 400px;
+  width: 960px;
+  margin: auto;
+}
