@@ -9,7 +9,7 @@
   <body>
     <header>
       <div align="center" class="container">
-      <img src="littlegreenlarder.png" height="200" width="400" alt="logo">
+      <img src="littlegreenlarder.png"  alt="logo">
       </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #81cea2;" align="centered">
@@ -44,41 +44,71 @@
     <main>
 
 
-      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px">
+      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 30px">
         <img onclick="displayStarters()" src="starters.jpg" class="card-img-top" style="width:250px ; height:250px">
         <div class="card-body">
           <h5 class="card-title">Starters</h5>
-          <p class="card-text">Click here to get some recipes for Starters</p>
+          <p class="card-text">Click on the picture to get some recipes for Starters</p>
         </div>
       </div>
 
-      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px">
+      <script>
+
+      function displayStarters(){
+        document.getElementById("starters").style.display = "block";
+        document.getElementById("mains").style.display = "none";
+        document.getElementById("desserts").style.display = "none";
+      }
+
+      </script>
+
+      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 30px">
         <img onclick="displayMains()" src="mains.jpg" class="card-img-top" style="width:250px ; height:250px">
         <div class="card-body">
           <h5 class="card-title">Mains</h5>
-          <p class="card-text">Click here to get some recipes for Mains</p>
+          <p class="card-text">Click on the picture to get some recipes for Mains</p>
         </div>
       </div>
 
-      <div class="card float-left col-4" style="width: 18rem ; height: 24rem ">
+      <script>
+
+      function displayMains(){
+        document.getElementById("starters").style.display = "none";
+        document.getElementById("mains").style.display = "block";
+        document.getElementById("desserts").style.display = "none";
+      }
+
+      </script>
+
+      <div class="card float-left col-4" style="width: 18rem ; height: 24rem ; margin-top: 30px">
         <img onclick="displayDesserts()" src="desserts.jpg" class="card-img-top" style="width:250px ; height:250px">
         <div class="card-body">
           <h5 class="card-title">Desserts</h5>
-          <p class="card-text">Click here to get some recipes for Desserts</p>
+          <p class="card-text">Click on the picture to get some recipes for Desserts</p>
         </div>
       </div>
 
+      <script>
+
+      function displayDesserts(){
+        document.getElementById("starters").style.display = "none";
+        document.getElementById("mains").style.display = "none";
+        document.getElementById("desserts").style.display = "block";
+      }
+
+      </script>
+
 <section id = "starters" style = "display:none">
   <p> STARTERS RECIPES WILL GO HERE </p>
-  <section>
+</section>
 
     <section id = "mains" style = "display:none">
       <p> MAINS RECIPES WILL GO HERE </p>
-      <section>
+    </section>
 
         <section id = "desserts" style = "display:none">
           <p> DESSERTS RECIPES WILL GO HERE </p>
-          <section>
+        </section>
       </main>
       </div>
       </body>
