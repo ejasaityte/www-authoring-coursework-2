@@ -1,1 +1,40 @@
-
+.tip-1{
+  background-color: #81cea2;
+  margin-top: 20px;
+  padding: 10px;
+  color: #646f58;
+  border-radius: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.tip-2{
+  background-color: #646f58;
+  margin-top: 20px;
+  padding: 10px;
+  color: #81cea2;
+  border-radius: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+.container {
+    max-width: 90%;
+    margin-top: 15px;
+}
+.FAQItem{
+  margin-top:10px;
+  margin-bottom:10px;
+  border-style: solid;
+  border-radius: 30px;
+  padding:10px;
+  border-color:#00b8e6;
+}
+#map{
+  height: 400px;
+  width: 960px;
+  margin: auto;
+}
+#contact-info{
+ max-width: 75%;
+}
