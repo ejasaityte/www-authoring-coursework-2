@@ -8,6 +8,10 @@
   text-align: center;
   font-size: 18px;
 }
+body
+{
+ padding-bottom:40px; 
+}
 .tip-2{
   background-color: #646f58;
   margin-top: 20px;
