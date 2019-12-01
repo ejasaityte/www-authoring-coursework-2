@@ -40,11 +40,21 @@
 }
 
 #rcorners1 {
+  margin-top:10px;
+  margin-bottom:10px;
+  border-style: solid;
   border-radius: 25px;
-  border: 2px solid #73AD21;
-  background-color: #73AD21;
+  border-color: #73AD21;
   padding: 20px;
-  width: 200px;
-  height: 150px;
   float:left;
+}
+
+#rcorners2 {
+  margin-top:10px;
+  margin-bottom:10px;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: #73AD21; 
+  padding: 20px;
+  float:right;
 }
