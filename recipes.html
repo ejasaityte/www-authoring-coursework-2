@@ -43,8 +43,11 @@
          <div class="col-14">
     <main>
 
+<h1 style="margin-top:10px"> Helpful Recipies you can make using Little Green Larder ingrediants </h1>
 
-      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 30px">
+<br>
+
+      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 10px">
         <img onclick="displayStarters()" src="starters.jpg" class="card-img-top" style="width:250px ; height:250px">
         <div class="card-body">
           <h5 class="card-title">Starters</h5>
@@ -62,7 +65,7 @@
 
       </script>
 
-      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 30px">
+      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 10px">
         <img onclick="displayMains()" src="mains.jpg" class="card-img-top" style="width:250px ; height:250px">
         <div class="card-body">
           <h5 class="card-title">Mains</h5>
@@ -80,7 +83,7 @@
 
       </script>
 
-      <div class="card float-left col-4" style="width: 18rem ; height: 24rem ; margin-top: 30px">
+      <div class="card float-left col-4" style="width: 18rem ; height: 24rem ; margin-top: 10px">
         <img onclick="displayDesserts()" src="desserts.jpg" class="card-img-top" style="width:250px ; height:250px">
         <div class="card-body">
           <h5 class="card-title">Desserts</h5>
@@ -98,8 +101,38 @@
 
       </script>
 
-<section id = "starters" style = "display:none">
-  <p> STARTERS RECIPES WILL GO HERE </p>
+<section id = "starters" style="display: none">
+
+  <br> </br>
+  <br> </br>
+  <br> </br>
+  <p> STARTERS RECIPES WILL GO HERE   </p>
+
+ <h2> Example Recipe </h2>
+
+ <ol>
+   <li>400g pasta </li>
+
+<li>100g chicken</li>
+
+<li>1 tomato</li>
+</ol>
+<button onclick="sendToShoppingList(This)">Click Here to send items to your shopping list</button>
+
+<script>
+function sendToShoppingList(id) {
+  var larderIngrediants = { "Ingrediant 1":"400g pasta", "Ingrediant 2":"1 Tomato"};
+  var outsiderIngrediants = { "Ingrediant 1":"chicken"};
+
+  var larderIngrediantsString = JSON.stringify(larderIngrediants);
+  var outsiderIngrediantsString = JSON.stringify(outsiderIngrediants);
+
+  window.location = "shopping-list.html" + larderIngrediantsString ;
+  window.location = "shopping-list.html" + outsiderIngrediantsString;
+}
+</script>
+
+
 </section>
 
     <section id = "mains" style = "display:none">
