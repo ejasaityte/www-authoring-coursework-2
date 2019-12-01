@@ -1,44 +1,639 @@
-
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
+
     <title>The Little Green Larder</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
   </head>
+
   <body>
+
     <header>
+
       <div align="center" class="container">
-      <img src="littlegreenlarder.png" height="200" width="400" alt="logo">
+
+      <img src="littlegreenlarder.png"  alt="logo">
+
       </div>
+
     </header>
+
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #81cea2;" align="centered">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
     <span class="navbar-toggler-icon"></span>
+
   </button>
 
+
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent" align="centered">
+
     <ul class="navbar-nav mr-auto">
+
       <li class="nav-item active">
+
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+
       </li>
+
       <li class="nav-item">
+
         <a class="nav-link" href="recipes.html">Recipes</a>
+
       </li>
+
       <li class="nav-item">
+
         <a class="nav-link" href="zero-waste-tips.html">Zero Waste Tips</a>
+
       </li>
+
       <li class="nav-item">
+
         <a class="nav-link" href="contact.html">Contact</a>
+
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="shopping-list.html">Shopping List</a>
-      </li>
+
     </ul>
+
   </div>
+
 </nav>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+
+<div class="container">
+
+   <div class="row">
+
+         <div class="col-14">
+
+    <main>
+
+
+
+<h1 style="margin-top:10px"> Helpful Recipies you can make using Little Green Larder ingrediants </h1>
+
+
+
+<br>
+
+
+
+      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 10px">
+
+        <img onclick="displayStarters()" src="starters.jpg" class="card-img-top" style="width:250px ; height:250px">
+
+        <div class="card-body">
+
+          <h5 class="card-title">Starters</h5>
+
+          <p class="card-text">Click on the picture to get some recipes for Starters</p>
+
+        </div>
+
+      </div>
+
+
+
+      <script>
+
+
+
+      function displayStarters(){
+
+        document.getElementById("starters").style.display = "block";
+
+        document.getElementById("mains").style.display = "none";
+
+        document.getElementById("desserts").style.display = "none";
+
+      }
+
+
+
+      </script>
+
+
+
+      <div class="card float-left col-4" style="width: 18rem; height: 24rem ; margin-right: 100px ; margin-top: 10px">
+
+        <img onclick="displayMains()" src="mains.jpg" class="card-img-top" style="width:250px ; height:250px">
+
+        <div class="card-body">
+
+          <h5 class="card-title">Mains</h5>
+
+          <p class="card-text">Click on the picture to get some recipes for Mains</p>
+
+        </div>
+
+      </div>
+
+
+
+      <script>
+
+
+
+      function displayMains(){
+
+        document.getElementById("starters").style.display = "none";
+
+        document.getElementById("mains").style.display = "block";
+
+        document.getElementById("desserts").style.display = "none";
+
+      }
+
+
+
+      </script>
+
+
+
+      <div class="card float-left col-4" style="width: 18rem ; height: 24rem ; margin-top: 10px">
+
+        <img onclick="displayDesserts()" src="desserts.jpg" class="card-img-top" style="width:250px ; height:250px">
+
+        <div class="card-body">
+
+          <h5 class="card-title">Desserts</h5>
+
+          <p class="card-text">Click on the picture to get some recipes for Desserts</p>
+
+        </div>
+
+      </div>
+
+
+
+      <script>
+
+
+
+      function displayDesserts(){
+
+        document.getElementById("starters").style.display = "none";
+
+        document.getElementById("mains").style.display = "none";
+
+        document.getElementById("desserts").style.display = "block";
+
+      }
+
+
+
+      </script>
+
+
+
+<section id = "starters" style="display: none">
+
+
+
+  <br> </br>
+
+  <br> </br>
+
+  <br> </br>
+
+  <p>    </p>
+
+
+
+<h2> Starters </h2>
+
+
+
+<h3> Tomato’s Stuffed with rice </h3>
+
+
+
+<ol>
+
+   <li>225g Arborio rice (or other short-grain white rice) </li>
+
+
+
+<li>6 ripe but firm large tomatoes </li>
+
+
+
+<li>4 tbsp olive oil, plus extra for drizzling </li>
+
+
+
+<li> Salt and freshly ground black pepper    </li>
+
+
+
+<li> 1 garlic clove, minced  </li>
+
+
+
+<li> 3 tbsp chopped fresh basil leaves </li>
+
+
+
+<li>2 tbsp chopped fresh Italian parsley leaves </li>
+
+
+
+<li> 25g grated Parmesan </li>
+
+</ol>
+
+
+
+<img src="tomatoes.jfif" alt="Tomatoes stuffed with rice" style="float: right" >
+
+<h4> Method </h4>
+
+
+
+<p>
+
+  1) Cook the rice in a medium saucepan of boiling salted water, stirring periodically, until just cooked through, about 10 minutes. Drain. Rinse the rice under cold running water. Set the rice aside. 
+
+<br>
+
+2) Preheat the oven to 180°C/gas mark 4. 
+
+<br>
+
+3) Cut a 1-cm thick slice off the top of each tomato; reserve the tomato tops. Cut and scoop the seeds, pulp, and juice from each tomato into a small bowl. Reserve 60ml of the tomato juice and pulp. 
+
+<br>
+
+4) Oil the bottom of an 20cm x 20cm baking dish with 2 tablespoons of the olive oil. Place the hollowed tomatoes in the prepared dish. 
+
+<br>
+
+5) Toss the rice with the reserved tomato juice and pulp. Add garlic, basil, parsley, Parmesan, the remaining 2 tablespoons of olive oil, and salt and pepper, to taste. Combine well. 
+
+<br>
+
+6) Spoon the rice mixture into the hollowed tomatoes, mounding slightly. Sprinkle leftover stuffing on the bottom of the pan. Drizzle entire dish with olive oil. Place the reserved tomato slices atop the tomatoes. Bake until the rice is heated through, about 20 minutes. 
+
+<br>
+
+Serve hot or at room temperature.
+
+</br>
+
+</p>
+
+<button onclick="sendToShoppingListStarter()">Click Here to send items to your shopping list </button>
+
+
+
+<script>
+
+function sendToShoppingListStarter() {
+
+document.getElementById("larder").innerHTML = "225g Arborio Rice, Salt & Pepper, 1 Garlic Clove, Basil " ;
+
+document.getElementById("elsewhere").innerHTML =  "6 large Tomatoes, Olive Oil, parsley, Parmesan Cheese" ;
+
+}
+
+</script>
+
+
+
+
+
+</section>
+
+    <section id = "mains" style = "display:none">
+
+
+
+        <br> </br>
+
+        <br> </br>
+
+        <br> </br>
+
+        <p>    </p>
+
+
+
+       <h2> Mains</h2>
+
+
+
+       <h3> Vegetarian Sausage and Mash </h3>
+
+
+
+       <ol>
+
+         <li> Vegetarian Sausage Mix </li>
+
+
+
+      <li>  1Kg Potatoes  </li>
+
+
+
+      <li>2 medium size onion  </li>
+
+
+
+      <li> 500ml Water </li>
+
+
+
+      <li> 2 tbsp soy sauce   </li>
+
+
+
+      <li>2 tsp Worcester sauce  </li>
+
+
+
+      <li>2 tsp Dijon mustard  </li>
+
+
+
+      <li> 1 1/2 tsp minced garlic  </li>
+
+
+
+      <li>2 tsp tomato paste </li>
+
+
+
+      <li>1/2 tsp lemon juice </li>
+
+
+
+      <li> 1 - 2 tsp olive oil </li>
+
+      </ol>
+
+
+
+      <img src="sausagemash.jfif" alt="Vegetarian Sausage and mash" style="float: right" >
+
+      <h4> Method </h4>
+
+
+
+      <p>
+
+        Make the vegetarian sausages as instructed
+
+
+
+   <br>
+
+
+
+  Vegan mashed potatoes recipe:
+
+  <br>
+
+  Cook 1kg potatoes until very soft. Peel and then mash together with all other ingredients. Very easy!
+
+  <br>
+
+
+
+
+
+  Home-made vegan gravy:
+
+  <br>
+
+  Chop onions finely and sauté in a pan with a bit of oil until lightly browned. Add all other ingredients and cook for about 5-10 minutes. Season to taste if necessary. Put into a blender and process until you get a smooth gravy.
+
+</br>
+
+      </p>
+
+      <button onclick="sendToShoppingListMain()">Click Here to send items to your shopping list </button>
+
+
+
+      <script>
+
+      function sendToShoppingListMain() {
+
+      document.getElementById("larder").innerHTML = "minced garlic, Vegetarian sausage mix " ;
+
+      document.getElementById("elsewhere").innerHTML =  "soy sause, worcester sause, Dijon Mustard, tomato paste, lemon juice" ;
+
+      }
+
+    </script>
+
+
+
+    </section>
+
+
+
+        <section id = "desserts" style = "display:none">
+
+
+
+                  <br> </br>
+
+                  <br> </br>
+
+                  <br> </br>
+
+                  <p>    </p>
+
+
+
+                 <h2> Desserts</h2>
+
+
+
+                 <h3> Chocolate Cake</h3>
+
+
+
+                 <ol>
+
+                   <li> 225g plain flour  </li>
+
+
+
+                <li>  350g caster sugar   </li>
+
+
+
+                <li>85g cocoa powder   </li>
+
+
+
+                <li> 1½ tsp baking powder  </li>
+
+
+
+                <li> 1½ tsp bicarbonate of soda   </li>
+
+
+
+                <li>2 free-range eggs   </li>
+
+
+
+                <li>250ml milk  </li>
+
+
+
+                <li>125ml vegetable oil   </li>
+
+
+
+                <li>2 tsp vanilla extract  </li>
+
+
+
+                <li>250ml oz boiling water  </li>
+
+
+
+                <li> 200g plain chocolate </li>
+
+
+
+                <li>200ml double cream </li>
+
+                </ol>
+
+
+
+                <img src="cake.jfif" alt="Chocloate Cake" style="float: right" >
+
+                <h4> Method </h4>
+
+
+
+          <p>
+
+                Preheat the oven to 180C/160C Fan/Gas 4. Grease and line two 20cm/8in sandwich tins.
+
+        <br>
+
+        For the cake, place all of the cake ingredients, except the boiling water, into a large mixing bowl. Using a wooden spoon, or electric whisk, beat the mixture until smooth and well combined.
+
+        <br>
+
+        Add the boiling water to the mixture, a little at a time, until smooth. (The cake mixture will now be very liquid.)
+
+        <br>
+
+        Divide the cake batter between the sandwich tins and bake in the oven for 25–35 minutes, or until the top is firm to the touch and a skewer inserted into the centre of the cake comes out clean.
+
+        <br>
+
+        Remove the cakes from the oven and allow to cool completely, still in their tins, before icing.
+
+        <br>
+
+        For the chocolate icing, heat the chocolate and cream in a saucepan over a low heat until the chocolate melts. Remove the pan from the heat and whisk the mixture until smooth, glossy and thickened. Set aside to cool for 1–2 hours, or until thick enough to spread over the cake.
+
+        <br>
+
+        To assemble the cake, run a round-bladed knife around the inside of the cake tins to loosen the cakes. Carefully remove the cakes from the tins.
+
+        <br>
+
+        Spread a little chocolate icing over the top of one of the chocolate cakes, then carefully top with the other cake.
+
+        <br>
+
+        Transfer the cake to a serving plate and ice the cake all over with the chocolate icing, using a palette knife.
+
+      </br>
+
+                </p>
+
+                <button onclick="sendToShoppingListDessert()">Click Here to send items to your shopping list </button>
+
+
+
+                <script>
+
+                function sendToShoppingListDessert() {
+
+                document.getElementById("larder").innerHTML = "plain flour, caster sugar, cocoa powder, baking powder, bicarbonate of soda " ;
+
+                document.getElementById("elsewhere").innerHTML =  "Free range eggs, milk, vegetable oil, vanilla extract, plain chocolate, double cream" ;
+
+                }
+
+              </script>
+
+
+
+        </section>
+
+      </main>
+
+      </div>
+
+      </body>
+
+
+
+<section id = "SHopping List" style="margin-top:20px">
+
+<h2> Shopping List </h2>
+
+
+
+<h3> Larder Ingrediants </h3>
+
+<ol id = "larder">
+
+
+
+</ol>
+
+
+
+<h3> Elsewhere Ingrediants </h3>
+
+
+
+<ol id = "elsewhere">
+
+
+
+</ol>
+
+
+
+</section>
+
+
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+ </body>
+
 </html>
