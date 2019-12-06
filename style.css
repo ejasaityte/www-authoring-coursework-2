@@ -60,7 +60,7 @@ footer{
   position: static;
   top: 50%; -->
   left: 50%; -->
-  transform: translate(-50%,-50%);
+  transform: translate(-100%,-50%);
 }
 .navigation{
   position: absolute;
