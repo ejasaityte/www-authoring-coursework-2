@@ -57,10 +57,10 @@ footer{
   overflow: hidden;
 }
 .middle{
-  position: static;
-<!--  top: 50%; -->
-<!-- left: 50%; -->
-<!--  transform: translate(-50%,-50%); -->
+  position: sticky;
+  top: 50%; -->
+  left: 50%; -->
+  transform: translate(-50%,-50%);
 }
 .navigation{
   position: absolute;
