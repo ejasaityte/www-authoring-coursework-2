@@ -57,7 +57,7 @@ footer{
   overflow: hidden;
 }
 .middle{
-  position: static;
+  position: relative;
   top: 50%;
   left: 50%;
   <!-- transform: translate(-100%,-50%); -->
